@@ -1,17 +1,11 @@
+const userNameData = ["Vorname", "Nachname"];
 
-const hobbies = ["Sports", "Cooking", "Reading"];
-console.log(hobbies[0]);
-console.log(hobbies[1]);
-console.log(hobbies[2]);
+const firstName = userNameData[0];
+const lastName = userNameData[1];
 
-/*adding element with helper method*/
-hobbies.push("Working");
-console.log(hobbies);
+console.log(firstName + " " + lastName);
 
-/*using funktions*/
-const index = hobbies.findIndex((item) => item ==="Sports");
+/*shorter: */
+const[fName, lName] = ["Vorname", "Nachname"];
 
-console.log("Index: " + index + " => " + hobbies[index]);
-
-const editedHobbies = hobbies.map((item) => ({text: item}) );
-console.log(editedHobbies);
+console.log(fName + " " + lName);
