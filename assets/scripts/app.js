@@ -1,5 +1,14 @@
-import defaultFunction from './util.js';
+const user = {
+    name: "Test",
+    age: 22,
+    greet() {
+        return("Hello" + " " + this.name + "!");
+    }
+}
 
-console.log(defaultFunction("Test", "Hello"));
+console.log(user);
+console.log("Name:" + user.name + ", Alter:" + user.age);
+console.log(user.greet());
+
 
 
