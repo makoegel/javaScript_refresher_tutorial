@@ -1,11 +1,17 @@
-const userNameData = ["Vorname", "Nachname"];
 
-const firstName = userNameData[0];
-const lastName = userNameData[1];
+const User = {
+    name: "Test",
+    age: 22
+};
 
-console.log(firstName + " " + lastName);
+const userName = User.name;
+const userAge = User.age;
 
-/*shorter: */
-const[fName, lName] = ["Vorname", "Nachname"];
+/*shorter*/
+const {name, age} = {
+    name: "Test1",
+    age: 33
+};
 
-console.log(fName + " " + lName);
+console.log (userName + " " + userAge);
+console.log (name + " " + age);
