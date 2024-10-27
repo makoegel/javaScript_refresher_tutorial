@@ -1,12 +1,12 @@
 
-const hobbies = ["Sports", "Cooking"];
-const newHobbies = ["Reading"];
+const user = {
+    name: "Test",
+    age: 22
+};
 
+const extendedUser = {
+    isAdmin: true,
+    ...user
+}
 
-/*generates array in array: */
-const mergedHobbies1 = [hobbies, newHobbies];
-console.log(mergedHobbies1);
-
-/*spread operator "..." writes existing arrays in one new array*/
-const mergedHobbies2 = [...hobbies, ...newHobbies];
-console.log(mergedHobbies2);
+console.log(extendedUser);
