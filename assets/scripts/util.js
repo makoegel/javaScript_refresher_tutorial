@@ -1,2 +1,4 @@
-/*only one default per file permitted*/
-export default "adsafeggarafg";
+
+export default "adefaegawegag";
+export let apiKey = "adaeageageageag";
+export let apiUser = "Test";

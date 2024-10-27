@@ -1,4 +1,4 @@
-/*name for default import is mandatory*/
-import apiKey from "./util.js";
+import apiDefault from "./util.js";
+import {apiKey, apiUser} from "./util.js";
 
-console.log(apiKey);
+console.log(apiDefault, apiKey, apiUser);
