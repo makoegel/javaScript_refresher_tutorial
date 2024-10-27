@@ -1,34 +1,15 @@
-/*define a function*/
-function handleTimeout() {
-    console.log("Timed out");
-}
+let userMessage = "Hi";
 
-/*define constant that contains a function as a value */
-const handleTimeout2 = () => {
-    console.log("Timed out ... again!");
-}
+userMessage = "Hello";
 
-function setTimeout(value, limit) {
-    if (limit <= 2000)
-        value()
-    else if (limit > 2000 && limit <= 3000)
-        value()
-    else
-        value()
-}
+userMessage = userMessage.concat("!!!");
 
-/*without Parantheses passing function as value => executed when called in the future*/
-setTimeout(handleTimeout, 2000);
-setTimeout(handleTimeout2, 3000);
+/* => pimitive values always produce new Values*/
 
-/*call with anonymous function*/
-setTimeout(() => console.log("More Time out ..."), 4000);
+const hobbies = ["Sports", "Cooking"];
 
+hobbies.push("Working");
 
-/*passing anonymous function to function*/
-function greeter(greetFn) {
-    greetFn();
-}
+console.log(hobbies)
 
-greeter(() => console.log("Hi"));
-
+/*arrays are objects, objects are reference values*/
