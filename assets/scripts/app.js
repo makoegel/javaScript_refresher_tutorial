@@ -1,4 +1,3 @@
-import apiDefault from "./util.js";
-import {apiKey, apiUser} from "./util.js";
+import  * as utils from "./util.js";
 
-console.log(apiDefault, apiKey, apiUser);
+console.log(utils.default, utils.apiKey, utils.apiUser);
