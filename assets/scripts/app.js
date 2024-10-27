@@ -9,8 +9,6 @@ hobbies.push("Working");
 console.log(hobbies);
 
 /*using funktions*/
-const index = hobbies.findIndex((item) => {
-    return item ==="Sports";
-});
+const index = hobbies.findIndex((item) => item ==="Sports");
 
 console.log("Index: " + index + " => " + hobbies[index]);
