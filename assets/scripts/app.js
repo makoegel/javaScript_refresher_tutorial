@@ -1,28 +1,16 @@
-const user = {
-    name: "Test",
-    age: 22,
-    greet() {
-        return("Hello" + " " + this.name + "!");
-    }
-};
 
-console.log(user);
-console.log("Name:" + user.name + ", Alter:" + user.age);
-console.log(user.greet());
+const hobbies = ["Sports", "Cooking", "Reading"];
+console.log(hobbies[0]);
+console.log(hobbies[1]);
+console.log(hobbies[2]);
 
+/*adding element with helper method*/
+hobbies.push("Working");
+console.log(hobbies);
 
+/*using funktions*/
+const index = hobbies.findIndex((item) => {
+    return item ==="Sports";
+});
 
-class User {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    greet (){
-        return("Hello" + " " + this.name + "!");
-    }
-}
-
-const user1 = new User("Test2", 35);
-console.log(user1.greet());
-
-
+console.log("Index: " + index + " => " + hobbies[index]);
