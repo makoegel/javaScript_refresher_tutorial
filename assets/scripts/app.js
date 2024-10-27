@@ -7,11 +7,13 @@ const User = {
 const userName = User.name;
 const userAge = User.age;
 
+console.log (userName + " " + userAge);
+
 /*shorter*/
-const {name, age} = {
+const {name: lastName, age} = {
     name: "Test1",
     age: 33
 };
 
-console.log (userName + " " + userAge);
-console.log (name + " " + age);
+
+console.log (lastName + " " + age);
