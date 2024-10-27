@@ -1,3 +1,4 @@
-export default "adefaegawegag";
-export let apiKey = "adaeageageageag";
-export let apiUser = "Test";
+export default (userName, message) => {
+   return(message + " " + userName);
+}
+
