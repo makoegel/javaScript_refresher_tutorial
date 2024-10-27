@@ -24,3 +24,11 @@ setTimeout(handleTimeout2, 3000);
 /*call with anonymous function*/
 setTimeout(() => console.log("More Time out ..."), 4000);
 
+
+/*passing anonymous function to function*/
+function greeter(greetFn) {
+    greetFn();
+}
+
+greeter(() => console.log("Hi"));
+
