@@ -1,3 +1,4 @@
-import {apiKey, apiUser as user} from "./util.js";
 
-console.log(apiKey, user);
+const userMessage = "Hello User";
+
+console.log(userMessage);
