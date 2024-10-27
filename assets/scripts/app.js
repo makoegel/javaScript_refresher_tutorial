@@ -1,19 +1,12 @@
 
-const User = {
-    name: "Test",
-    age: 22
-};
-
-const userName = User.name;
-const userAge = User.age;
-
-console.log (userName + " " + userAge);
-
-/*shorter*/
-const {name: lastName, age} = {
-    name: "Test1",
-    age: 33
-};
+const hobbies = ["Sports", "Cooking"];
+const newHobbies = ["Reading"];
 
 
-console.log (lastName + " " + age);
+/*generates array in array: */
+const mergedHobbies1 = [hobbies, newHobbies];
+console.log(mergedHobbies1);
+
+/*spread operator "..." writes existing arrays in one new array*/
+const mergedHobbies2 = [...hobbies, ...newHobbies];
+console.log(mergedHobbies2);
